@@ -1,64 +1,95 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>سایت شخصی من</title>
+  <title>My Personal Site</title>
   <style>
     body {
-      font-family: Tahoma, sans-serif;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      background: #f8f9fa;
     }
+
     header {
-      background-color: #2c3e50;
+      background-color: #343a40;
       color: white;
-      padding: 20px;
+      padding: 20px 0;
       text-align: center;
     }
+
+    nav {
+      background-color: #495057;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
     section {
-      margin-top: 30px;
+      margin-bottom: 40px;
     }
-    h2 {
-      color: #2c3e50;
-    }
+
     footer {
-      margin-top: 40px;
+      background-color: #343a40;
+      color: #ccc;
       text-align: center;
+      padding: 20px 0;
       font-size: 14px;
-      color: gray;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>سلام! من [نام شما] هستم</h1>
-    <p>خوش آمدید به سایت شخصی من</p>
+    <h1>Welcome to My Website</h1>
+    <p>Created with GitHub Pages</p>
   </header>
 
-  <section>
-    <h2>درباره من</h2>
-    <p>من دانشجوی رشته [رشته تحصیلی] در دانشگاه [نام دانشگاه] هستم. به برنامه‌نویسی و یادگیری علاقه دارم.</p>
-  </section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section>
-    <h2>پروژه‌ها</h2>
-    <ul>
-      <li>پروژه ۱ - توضیح مختصر درباره پروژه اول</li>
-      <li>پروژه ۲ - توضیح مختصر درباره پروژه دوم</li>
-    </ul>
-  </section>
+  <main>
+    <section id="home">
+      <h2>About Me</h2>
+      <p>Hello! I’m a student interested in computer science and web development. This website is a personal project for my course.</p>
+    </section>
 
-  <section>
-    <h2>تماس با من</h2>
-    <p>ایمیل: example@email.com</p>
-    <p>گیت‌هاب: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project One:</strong> A simple HTML page hosted on GitHub.</li>
+        <li><strong>Project Two:</strong> A Python script for data analysis (coming soon).</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    </section>
+  </main>
 
   <footer>
-    © 2025 - ساخته شده توسط [نام شما]
+    &copy; 2025 - Your Name. All rights reserved.
   </footer>
 
 </body>
